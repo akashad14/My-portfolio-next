@@ -5,6 +5,7 @@ import AboutPage from "@/pages/About"
 import { ExperienceTimeline } from "@/components/Educationexpe"
 import SkillsSection from "@/pages/Skills"
 import Projects from "@/pages/Project-section"
+import Contact from "@/pages/Contact"
 
 export default function Home() {
   return (
@@ -37,6 +38,9 @@ export default function Home() {
         {/* Projects */}
         <AnimatedSection id="projects">
           <Projects />
+        </AnimatedSection>
+        <AnimatedSection id="Contact">
+          <Contact />
         </AnimatedSection>
       </main>
     </>

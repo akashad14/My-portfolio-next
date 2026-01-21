@@ -11,7 +11,7 @@ export default function Page() {
     { href: "#Home", label: "Home", icon: Home },
     { href: "#About", label: "About", icon: User },
     { href: "#Projects", label: "Projects", icon: Briefcase },
-    { href: "#contact", label: "Contact", icon: Mail },
+    { href: "#Contact", label: "Contact", icon: Mail },
   ]
 
   return (

@@ -80,7 +80,7 @@ export default function HeroSection() {
           >
             <button
               onClick={handleDownloadCV}
-              className="group relative px-8 py-3 font-semibold rounded-full bg-accent text-accent-foreground overflow-hidden transition-all hover:scale-105 hover:shadow-lg hover:shadow-accent/50"
+              className="group relative px-8 py-3 font-semibold rounded-full bg-purple-600  text-accent-foreground overflow-hidden transition-all hover:scale-105 hover:shadow-lg hover:shadow-accent/50"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
               <span className="relative flex items-center gap-2">
