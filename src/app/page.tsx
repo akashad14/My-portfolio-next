@@ -1,4 +1,4 @@
-"use client"
+import AnimatedSection from "@/components/ui/AnimatedSection"
 
 import HeroSection from "@/pages/Home"
 import AboutPage from "@/pages/About"
@@ -8,16 +8,37 @@ import Projects from "@/pages/Project-section"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
-      <HeroSection />
-      <AboutPage />
+    <>
+ 
 
-      <div className="mx-auto max-w-6xl my-10">
-        <ExperienceTimeline />
-      </div>
+      <main className="min-h-screen bg-background text-foreground">
+        {/* Home */}
+        <AnimatedSection id="home">
+          <HeroSection />
+        </AnimatedSection>
 
-      <SkillsSection />
-      <Projects />
-    </main>
+        {/* About */}
+        <AnimatedSection id="about">
+          <AboutPage />
+        </AnimatedSection>
+
+        {/* Experience */}
+        <AnimatedSection id="experience">
+          <div className="mx-auto my-10 max-w-6xl px-4">
+            <ExperienceTimeline />
+          </div>
+        </AnimatedSection>
+
+        {/* Skills */}
+        <AnimatedSection id="skills">
+          <SkillsSection />
+        </AnimatedSection>
+
+        {/* Projects */}
+        <AnimatedSection id="projects">
+          <Projects />
+        </AnimatedSection>
+      </main>
+    </>
   )
 }
